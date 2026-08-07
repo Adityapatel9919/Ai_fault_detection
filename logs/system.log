@@ -1,0 +1,17 @@
+2026-08-07 05:41:34,780 | WARNING | Matplotlib is building the font cache; this may take a moment.
+2026-08-07 05:41:42,865 | INFO | Failed to extract font properties from /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc: FT_Open_Face (ft2font.cpp line 200) failed with error 0x02: unknown file format
+2026-08-07 05:41:42,917 | INFO | Failed to extract font properties from /System/Library/Fonts/Supplemental/NISC18030.ttf: Non-scalable fonts are not supported
+2026-08-07 05:41:42,986 | INFO | Failed to extract font properties from /System/Library/Fonts/LastResort.otf: tuple indices must be integers or slices, not str
+2026-08-07 05:41:43,043 | INFO | Failed to extract font properties from /System/Library/Fonts/Apple Color Emoji.ttc: Non-scalable fonts are not supported
+2026-08-07 05:41:43,129 | INFO | generated new fontManager
+2026-08-07 06:04:25,001 | INFO | Loading dataset...
+2026-08-07 06:07:03,805 | INFO | ============================================================
+2026-08-07 06:07:03,805 | INFO | AI-Based Transmission Line Protection System
+2026-08-07 06:07:03,805 | INFO | Support Vector Machine + Impedance Method
+2026-08-07 06:07:03,806 | INFO | System Initialized Successfully
+2026-08-07 06:07:03,806 | INFO | ============================================================
+2026-08-07 06:10:49,934 | INFO | ============================================================
+2026-08-07 06:10:49,934 | INFO | AI-Based Transmission Line Protection System
+2026-08-07 06:10:49,934 | INFO | Support Vector Machine + Impedance Method
+2026-08-07 06:10:49,934 | INFO | System Initialized Successfully
+2026-08-07 06:10:49,934 | INFO | ============================================================
