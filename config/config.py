@@ -38,7 +38,7 @@ NOTEBOOK_DIR = ROOT_DIR / "notebooks"
 # DATASET
 # =========================================================
 
-DATASET_NAME = "fault_dataset.csv"
+DATASET_NAME = "protect90_features_ml_ready.parquet"
 
 DATASET_PATH = RAW_DATA_DIR / DATASET_NAME
 
@@ -160,3 +160,15 @@ FAULT_LABELS = {
     3: "Double Line-to-Ground (LLG)",
     4: "Three-Phase Fault (LLL)"
 }
+
+from pathlib import Path
+
+# ==========================================================
+# PROTECT-90 Dataset
+# ==========================================================
+
+DATASET_ROOT = Path("/Users/aditya/Desktop/major project")
+
+LABELS_FILE = DATASET_ROOT / "hv_double_line_90kv_labels.csv"
+
+WAVEFORM_DIR = DATASET_ROOT / "hv_double_line_90kv_preprocessed_data"

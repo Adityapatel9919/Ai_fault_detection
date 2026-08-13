@@ -15,3 +15,327 @@
 2026-08-07 06:10:49,934 | INFO | Support Vector Machine + Impedance Method
 2026-08-07 06:10:49,934 | INFO | System Initialized Successfully
 2026-08-07 06:10:49,934 | INFO | ============================================================
+2026-08-07 10:29:18,813 | ERROR | Dataset protect90_features_ml_ready.parquet not found in the current directory.
+2026-08-07 10:29:18,814 | ERROR | Please ensure the preprocessed dataset is available before running.
+2026-08-07 10:32:38,328 | INFO | === Starting Automated Training Pipeline ===
+2026-08-07 10:32:38,328 | INFO | Loading dataset from /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/data/processed/protect90_features_ml_ready.parquet...
+2026-08-07 10:32:38,456 | INFO | Delegating to DataPreprocessor...
+2026-08-07 10:32:38,457 | INFO | DataPreprocessor initialized (missing=median, outlier=zscore/clip, scaling=standard, test_size=0.20).
+2026-08-07 10:32:38,457 | WARNING | process_and_split not found, attempting fit_transform fallback.
+2026-08-07 10:32:38,457 | INFO | Starting fit_transform on DataFrame of shape (9022, 202).
+2026-08-07 10:32:38,494 | INFO | Validation passed: shape=(9022, 202), duplicates=0, infinite_values=0.
+2026-08-07 10:32:38,521 | INFO | No constant feature columns found.
+2026-08-07 10:32:38,638 | INFO | Numeric imputation fitted (strategy=median); 0 missing value(s) in training data.
+2026-08-07 10:32:38,643 | ERROR | Preprocessing fallback failed: SimpleImputer does not support data with dtype bool. Please provide either a numeric array (with a floating point or integer dtype) or categorical data represented either as an array with integer dtype or an array of string values with an object dtype.
+2026-08-07 10:32:38,643 | CRITICAL | Fatal pipeline error: Preprocessing failed: SimpleImputer does not support data with dtype bool. Please provide either a numeric array (with a floating point or integer dtype) or categorical data represented either as an array with integer dtype or an array of string values with an object dtype.
+2026-08-07 10:47:39,006 | INFO | === Starting Automated Training Pipeline ===
+2026-08-07 10:47:39,007 | INFO | Loading dataset from /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/data/processed/protect90_features_ml_ready.parquet...
+2026-08-07 10:47:39,120 | INFO | Delegating to DataPreprocessor...
+2026-08-07 10:47:39,120 | INFO | DataPreprocessor initialized (missing=median, outlier=zscore/clip, scaling=standard, test_size=0.20).
+2026-08-07 10:47:39,120 | WARNING | process_and_split not found, attempting fit_transform fallback.
+2026-08-07 10:47:39,120 | INFO | Starting fit_transform on DataFrame of shape (9022, 202).
+2026-08-07 10:47:39,156 | INFO | Validation passed: shape=(9022, 202), duplicates=0, infinite_values=0.
+2026-08-07 10:47:39,184 | INFO | No constant feature columns found.
+2026-08-07 10:47:39,303 | INFO | Numeric imputation fitted (strategy=median); 0 missing value(s) in training data.
+2026-08-07 10:47:39,370 | INFO | Outlier clipping applied: 2937 value(s) clipped.
+2026-08-07 10:47:39,378 | INFO | LabelEncoder fitted for target 'sc_type': 4 class(es) -> ['0', '1', '2', '3']
+2026-08-07 10:47:39,379 | INFO | LabelEncoder fitted for target 'fault_target': 4 class(es) -> ['Line_1_2_a', 'Line_1_2_b', 'Line_2_3_a', 'Line_2_3_b']
+2026-08-07 10:47:39,380 | INFO | LabelEncoder fitted for target 'phase_select': 3 class(es) -> ['0', '1', '2']
+2026-08-07 10:47:39,383 | ERROR | Preprocessing fallback failed: could not convert string to float: 'Line_1_2_a'
+2026-08-07 10:47:39,384 | CRITICAL | Fatal pipeline error: Preprocessing failed: could not convert string to float: 'Line_1_2_a'
+2026-08-07 10:51:19,822 | INFO | === Starting Automated Training Pipeline ===
+2026-08-07 10:51:19,822 | INFO | Loading dataset from /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/data/processed/protect90_features_ml_ready.parquet...
+2026-08-07 10:51:19,904 | INFO | Delegating to DataPreprocessor...
+2026-08-07 10:51:19,904 | INFO | DataPreprocessor initialized (missing=median, outlier=zscore/clip, scaling=standard, test_size=0.20).
+2026-08-07 10:51:19,904 | WARNING | process_and_split not found, attempting fit_transform fallback.
+2026-08-07 10:51:19,904 | INFO | Starting fit_transform on DataFrame of shape (9022, 202).
+2026-08-07 10:51:19,935 | INFO | Validation passed: shape=(9022, 202), duplicates=0, infinite_values=0.
+2026-08-07 10:51:19,962 | INFO | No constant feature columns found.
+2026-08-07 10:51:20,079 | INFO | Numeric imputation fitted (strategy=median); 0 missing value(s) in training data.
+2026-08-07 10:51:20,147 | INFO | Outlier clipping applied: 2937 value(s) clipped.
+2026-08-07 10:51:20,150 | INFO | LabelEncoder fitted for target 'sc_type': 4 class(es) -> ['0', '1', '2', '3']
+2026-08-07 10:51:20,151 | INFO | LabelEncoder fitted for target 'fault_target': 4 class(es) -> ['Line_1_2_a', 'Line_1_2_b', 'Line_2_3_a', 'Line_2_3_b']
+2026-08-07 10:51:20,153 | INFO | LabelEncoder fitted for target 'phase_select': 3 class(es) -> ['0', '1', '2']
+2026-08-07 10:51:20,160 | INFO | Train/test split complete: 7217 train / 1805 test rows (test_size=0.20).
+2026-08-07 10:51:20,167 | INFO | Scaler fitted: standard on 198 feature(s).
+2026-08-07 10:51:20,169 | INFO | fit_transform complete: 198 final feature(s), 7217 train row(s), 1805 test row(s).
+2026-08-07 10:51:20,169 | ERROR | Preprocessing fallback failed: 'PreprocessedData' object has no attribute 'drop'
+2026-08-07 10:51:20,169 | CRITICAL | Fatal pipeline error: Preprocessing failed: 'PreprocessedData' object has no attribute 'drop'
+2026-08-07 10:57:49,756 | INFO | === Starting Automated Training Pipeline ===
+2026-08-07 10:57:49,756 | INFO | Loading dataset from /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/data/processed/protect90_features_ml_ready.parquet...
+2026-08-07 10:57:49,837 | INFO | Delegating to DataPreprocessor...
+2026-08-07 10:57:49,837 | INFO | DataPreprocessor initialized (missing=median, outlier=zscore/clip, scaling=standard, test_size=0.20).
+2026-08-07 10:57:49,837 | INFO | Starting fit_transform on DataFrame of shape (9022, 202).
+2026-08-07 10:57:49,869 | INFO | Validation passed: shape=(9022, 202), duplicates=0, infinite_values=0.
+2026-08-07 10:57:49,897 | INFO | No constant feature columns found.
+2026-08-07 10:57:50,014 | INFO | Numeric imputation fitted (strategy=median); 0 missing value(s) in training data.
+2026-08-07 10:57:50,083 | INFO | Outlier clipping applied: 2937 value(s) clipped.
+2026-08-07 10:57:50,086 | INFO | LabelEncoder fitted for target 'sc_type': 4 class(es) -> ['0', '1', '2', '3']
+2026-08-07 10:57:50,087 | INFO | LabelEncoder fitted for target 'fault_target': 4 class(es) -> ['Line_1_2_a', 'Line_1_2_b', 'Line_2_3_a', 'Line_2_3_b']
+2026-08-07 10:57:50,089 | INFO | LabelEncoder fitted for target 'phase_select': 3 class(es) -> ['0', '1', '2']
+2026-08-07 10:57:50,095 | INFO | Train/test split complete: 7217 train / 1805 test rows (test_size=0.20).
+2026-08-07 10:57:50,101 | INFO | Scaler fitted: standard on 198 feature(s).
+2026-08-07 10:57:50,103 | INFO | fit_transform complete: 198 final feature(s), 7217 train row(s), 1805 test row(s).
+2026-08-07 10:57:50,104 | INFO | Preprocessing complete. Train size: 7217, Test size: 1805, Features: 198
+2026-08-07 10:57:50,104 | INFO | --- Processing Model: svm ---
+2026-08-07 10:57:50,104 | INFO | Creating model: svm
+2026-08-07 10:57:50,104 | INFO | Successfully created svm.
+2026-08-07 10:57:50,104 | INFO | Training svm...
+2026-08-07 10:58:02,049 | INFO | Training completed in 11.94s.
+2026-08-07 10:58:02,050 | INFO | Evaluating svm...
+2026-08-07 10:58:03,853 | INFO | Starting model evaluation process...
+2026-08-07 10:58:03,853 | ERROR | Pipeline failed for model svm: 'numpy.ndarray' object has no attribute 'empty'
+2026-08-07 10:58:03,853 | INFO | --- Processing Model: random_forest ---
+2026-08-07 10:58:03,853 | INFO | Creating model: random_forest
+2026-08-07 10:58:03,853 | INFO | Successfully created random_forest.
+2026-08-07 10:58:03,853 | INFO | Training random_forest...
+2026-08-07 10:58:05,501 | INFO | Training completed in 1.65s.
+2026-08-07 10:58:05,501 | INFO | Evaluating random_forest...
+2026-08-07 10:58:06,623 | INFO | Starting model evaluation process...
+2026-08-07 10:58:06,623 | ERROR | Pipeline failed for model random_forest: 'numpy.ndarray' object has no attribute 'empty'
+2026-08-07 10:58:06,623 | INFO | --- Processing Model: xgboost ---
+2026-08-07 10:58:06,623 | INFO | Creating model: xgboost
+2026-08-07 10:58:06,623 | ERROR | XGBoost is requested but not installed.
+2026-08-07 10:58:06,623 | ERROR | Failed to create model 'xgboost': XGBoost library is not installed. Please install it using 'pip install xgboost'.
+2026-08-07 10:58:06,623 | ERROR | Pipeline failed for model xgboost: Error instantiating xgboost: XGBoost library is not installed. Please install it using 'pip install xgboost'.
+2026-08-07 10:58:06,623 | INFO | --- Processing Model: mlp ---
+2026-08-07 10:58:06,623 | INFO | Creating model: mlp
+2026-08-07 10:58:06,623 | INFO | Successfully created mlp.
+2026-08-07 10:58:06,624 | INFO | Training mlp...
+2026-08-07 10:58:08,015 | INFO | Training completed in 1.39s.
+2026-08-07 10:58:08,015 | INFO | Evaluating mlp...
+2026-08-07 10:58:09,019 | INFO | Starting model evaluation process...
+2026-08-07 10:58:09,020 | ERROR | Pipeline failed for model mlp: 'numpy.ndarray' object has no attribute 'empty'
+2026-08-07 10:58:09,020 | ERROR | No models were successfully trained. Aborting.
+2026-08-07 11:07:06,027 | INFO | === Starting Automated Training Pipeline ===
+2026-08-07 11:07:06,027 | INFO | Loading dataset from /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/data/processed/protect90_features_ml_ready.parquet...
+2026-08-07 11:07:06,141 | INFO | Delegating to DataPreprocessor...
+2026-08-07 11:07:06,142 | INFO | DataPreprocessor initialized (missing=median, outlier=zscore/clip, scaling=standard, test_size=0.20).
+2026-08-07 11:07:06,142 | INFO | Starting fit_transform on DataFrame of shape (9022, 202).
+2026-08-07 11:07:06,178 | INFO | Validation passed: shape=(9022, 202), duplicates=0, infinite_values=0.
+2026-08-07 11:07:06,205 | INFO | No constant feature columns found.
+2026-08-07 11:07:06,325 | INFO | Numeric imputation fitted (strategy=median); 0 missing value(s) in training data.
+2026-08-07 11:07:06,392 | INFO | Outlier clipping applied: 2937 value(s) clipped.
+2026-08-07 11:07:06,398 | INFO | LabelEncoder fitted for target 'sc_type': 4 class(es) -> ['0', '1', '2', '3']
+2026-08-07 11:07:06,399 | INFO | LabelEncoder fitted for target 'fault_target': 4 class(es) -> ['Line_1_2_a', 'Line_1_2_b', 'Line_2_3_a', 'Line_2_3_b']
+2026-08-07 11:07:06,400 | INFO | LabelEncoder fitted for target 'phase_select': 3 class(es) -> ['0', '1', '2']
+2026-08-07 11:07:06,407 | INFO | Train/test split complete: 7217 train / 1805 test rows (test_size=0.20).
+2026-08-07 11:07:06,414 | INFO | Scaler fitted: standard on 198 feature(s).
+2026-08-07 11:07:06,416 | INFO | fit_transform complete: 198 final feature(s), 7217 train row(s), 1805 test row(s).
+2026-08-07 11:07:06,416 | INFO | Preprocessing complete. Train size: 7217, Test size: 1805, Features: 198
+2026-08-07 11:07:06,416 | INFO | --- Processing Model: svm ---
+2026-08-07 11:07:06,416 | INFO | Creating model: svm
+2026-08-07 11:07:06,416 | INFO | Successfully created svm.
+2026-08-07 11:07:06,416 | INFO | Training svm...
+2026-08-07 11:07:18,106 | INFO | Training completed in 11.69s.
+2026-08-07 11:07:18,106 | INFO | Evaluating svm...
+2026-08-07 11:07:19,979 | INFO | Starting model evaluation process...
+2026-08-07 11:07:19,980 | INFO | Generating predictions on the test set...
+2026-08-07 11:07:21,734 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.5934
+2026-08-07 11:07:21,734 | INFO | Saving model 'svm' (Version: v20260807_053721) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/svm/v20260807_053721
+2026-08-07 11:07:22,163 | INFO | Successfully saved and verified 'svm' version 'v20260807_053721'.
+2026-08-07 11:07:22,164 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/svm_report.json
+2026-08-07 11:07:22,164 | INFO | --- Processing Model: random_forest ---
+2026-08-07 11:07:22,164 | INFO | Creating model: random_forest
+2026-08-07 11:07:22,164 | INFO | Successfully created random_forest.
+2026-08-07 11:07:22,164 | INFO | Training random_forest...
+2026-08-07 11:07:23,831 | INFO | Training completed in 1.67s.
+2026-08-07 11:07:23,831 | INFO | Evaluating random_forest...
+2026-08-07 11:07:24,093 | INFO | Starting model evaluation process...
+2026-08-07 11:07:24,093 | INFO | Generating predictions on the test set...
+2026-08-07 11:07:25,214 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.5856
+2026-08-07 11:07:25,214 | INFO | Saving model 'random_forest' (Version: v20260807_053725) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/random_forest/v20260807_053725
+2026-08-07 11:07:25,426 | INFO | Successfully saved and verified 'random_forest' version 'v20260807_053725'.
+2026-08-07 11:07:25,426 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/random_forest_report.json
+2026-08-07 11:07:25,426 | INFO | --- Processing Model: xgboost ---
+2026-08-07 11:07:25,426 | INFO | Creating model: xgboost
+2026-08-07 11:07:25,426 | ERROR | XGBoost is requested but not installed.
+2026-08-07 11:07:25,426 | ERROR | Failed to create model 'xgboost': XGBoost library is not installed. Please install it using 'pip install xgboost'.
+2026-08-07 11:07:25,426 | ERROR | Pipeline failed for model xgboost: Error instantiating xgboost: XGBoost library is not installed. Please install it using 'pip install xgboost'.
+2026-08-07 11:07:25,426 | INFO | --- Processing Model: mlp ---
+2026-08-07 11:07:25,426 | INFO | Creating model: mlp
+2026-08-07 11:07:25,426 | INFO | Successfully created mlp.
+2026-08-07 11:07:25,426 | INFO | Training mlp...
+2026-08-07 11:07:26,091 | INFO | Training completed in 0.66s.
+2026-08-07 11:07:26,091 | INFO | Evaluating mlp...
+2026-08-07 11:07:27,055 | INFO | Starting model evaluation process...
+2026-08-07 11:07:27,056 | INFO | Generating predictions on the test set...
+2026-08-07 11:07:27,208 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.6283
+2026-08-07 11:07:27,208 | INFO | Saving model 'mlp' (Version: v20260807_053727) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/mlp/v20260807_053727
+2026-08-07 11:07:27,261 | INFO | Successfully saved and verified 'mlp' version 'v20260807_053727'.
+2026-08-07 11:07:27,261 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/mlp_report.json
+2026-08-07 11:07:27,261 | INFO | Generating Comparison DataFrame...
+2026-08-07 11:07:27,263 | INFO | === PIPELINE COMPLETION SUMMARY ===
+2026-08-07 11:07:27,265 | INFO | 
+        Model  Accuracy  Precision   Recall       F1  Exact Match Ratio  Training Time  Prediction Time
+          mlp  0.861496   0.863631 0.861496 0.862178           0.628255         0.6643           0.9636
+          svm  0.847091   0.844029 0.847091 0.843888           0.593352        11.6900           1.8722
+random_forest  0.844875   0.833526 0.844875 0.833621           0.585596         1.6667           0.2620
+2026-08-07 11:07:27,265 | INFO | 
+🏆 BEST MODEL IDENTIFIED: mlp
+2026-08-07 11:07:27,265 | INFO | 🏆 EXACT MATCH RATIO: 0.6283
+2026-08-07 11:07:27,267 | INFO | Saved comparison report to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/comparison.csv
+2026-08-07 11:07:27,270 | INFO | Saved best model artifact to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/best_model.pkl
+2026-08-07 11:07:27,271 | INFO | Saved best model evaluation report to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/best_model_report.json
+2026-08-07 11:07:27,271 | INFO | Automated Training Pipeline executed successfully.
+2026-08-07 11:20:59,261 | INFO | === Starting Automated Training Pipeline ===
+2026-08-07 11:20:59,262 | INFO | Loading dataset from /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/data/processed/protect90_features_ml_ready.parquet...
+2026-08-07 11:20:59,383 | INFO | Delegating to DataPreprocessor...
+2026-08-07 11:20:59,383 | INFO | DataPreprocessor initialized (missing=median, outlier=zscore/clip, scaling=standard, test_size=0.20).
+2026-08-07 11:20:59,383 | INFO | Starting fit_transform on DataFrame of shape (9022, 202).
+2026-08-07 11:20:59,418 | INFO | Validation passed: shape=(9022, 202), duplicates=0, infinite_values=0.
+2026-08-07 11:20:59,446 | INFO | No constant feature columns found.
+2026-08-07 11:20:59,566 | INFO | Numeric imputation fitted (strategy=median); 0 missing value(s) in training data.
+2026-08-07 11:20:59,634 | INFO | Outlier clipping applied: 2937 value(s) clipped.
+2026-08-07 11:20:59,640 | INFO | LabelEncoder fitted for target 'sc_type': 4 class(es) -> ['0', '1', '2', '3']
+2026-08-07 11:20:59,641 | INFO | LabelEncoder fitted for target 'fault_target': 4 class(es) -> ['Line_1_2_a', 'Line_1_2_b', 'Line_2_3_a', 'Line_2_3_b']
+2026-08-07 11:20:59,642 | INFO | LabelEncoder fitted for target 'phase_select': 3 class(es) -> ['0', '1', '2']
+2026-08-07 11:20:59,649 | INFO | Train/test split complete: 7217 train / 1805 test rows (test_size=0.20).
+2026-08-07 11:20:59,656 | INFO | Scaler fitted: standard on 198 feature(s).
+2026-08-07 11:20:59,659 | INFO | fit_transform complete: 198 final feature(s), 7217 train row(s), 1805 test row(s).
+2026-08-07 11:20:59,659 | INFO | Preprocessing complete. Train size: 7217, Test size: 1805, Features: 198
+2026-08-07 11:20:59,659 | INFO | --- Processing Model: svm ---
+2026-08-07 11:20:59,659 | INFO | Creating model: svm
+2026-08-07 11:20:59,659 | INFO | Successfully created svm.
+2026-08-07 11:20:59,659 | INFO | Training svm...
+2026-08-07 11:21:11,195 | INFO | Training completed in 11.54s.
+2026-08-07 11:21:11,196 | INFO | Evaluating svm...
+2026-08-07 11:21:13,053 | INFO | Starting model evaluation process...
+2026-08-07 11:21:13,054 | INFO | Generating predictions on the test set...
+2026-08-07 11:21:14,570 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.5934
+2026-08-07 11:21:14,571 | INFO | Saving model 'svm' (Version: v20260807_055114) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/svm/v20260807_055114
+2026-08-07 11:21:14,983 | INFO | Successfully saved and verified 'svm' version 'v20260807_055114'.
+2026-08-07 11:21:14,983 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/svm_report.json
+2026-08-07 11:21:14,983 | INFO | --- Processing Model: random_forest ---
+2026-08-07 11:21:14,983 | INFO | Creating model: random_forest
+2026-08-07 11:21:14,983 | INFO | Successfully created random_forest.
+2026-08-07 11:21:14,984 | INFO | Training random_forest...
+2026-08-07 11:21:17,113 | INFO | Training completed in 2.13s.
+2026-08-07 11:21:17,113 | INFO | Evaluating random_forest...
+2026-08-07 11:21:18,194 | INFO | Starting model evaluation process...
+2026-08-07 11:21:18,194 | INFO | Generating predictions on the test set...
+2026-08-07 11:21:19,299 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.5856
+2026-08-07 11:21:19,301 | INFO | Saving model 'random_forest' (Version: v20260807_055119) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/random_forest/v20260807_055119
+2026-08-07 11:21:19,515 | INFO | Successfully saved and verified 'random_forest' version 'v20260807_055119'.
+2026-08-07 11:21:19,515 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/random_forest_report.json
+2026-08-07 11:21:19,515 | INFO | --- Processing Model: xgboost ---
+2026-08-07 11:21:19,516 | INFO | Creating model: xgboost
+2026-08-07 11:21:19,516 | INFO | Successfully created xgboost.
+2026-08-07 11:21:19,516 | INFO | Training xgboost...
+2026-08-07 11:21:26,274 | INFO | Training completed in 6.76s.
+2026-08-07 11:21:26,274 | INFO | Evaluating xgboost...
+2026-08-07 11:21:27,223 | INFO | Starting model evaluation process...
+2026-08-07 11:21:27,224 | INFO | Generating predictions on the test set...
+2026-08-07 11:21:27,369 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.6510
+2026-08-07 11:21:27,369 | INFO | Saving model 'xgboost' (Version: v20260807_055127) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/xgboost/v20260807_055127
+2026-08-07 11:21:27,399 | INFO | Successfully saved and verified 'xgboost' version 'v20260807_055127'.
+2026-08-07 11:21:27,399 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/xgboost_report.json
+2026-08-07 11:21:27,399 | INFO | --- Processing Model: mlp ---
+2026-08-07 11:21:27,399 | INFO | Creating model: mlp
+2026-08-07 11:21:27,399 | INFO | Successfully created mlp.
+2026-08-07 11:21:27,399 | INFO | Training mlp...
+2026-08-07 11:21:28,086 | INFO | Training completed in 0.69s.
+2026-08-07 11:21:28,086 | INFO | Evaluating mlp...
+2026-08-07 11:21:28,215 | INFO | Starting model evaluation process...
+2026-08-07 11:21:28,215 | INFO | Generating predictions on the test set...
+2026-08-07 11:21:29,174 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.6283
+2026-08-07 11:21:29,174 | INFO | Saving model 'mlp' (Version: v20260807_055129) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/mlp/v20260807_055129
+2026-08-07 11:21:29,217 | INFO | Successfully saved and verified 'mlp' version 'v20260807_055129'.
+2026-08-07 11:21:29,217 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/mlp_report.json
+2026-08-07 11:21:29,218 | INFO | Generating Comparison DataFrame...
+2026-08-07 11:21:29,224 | INFO | === PIPELINE COMPLETION SUMMARY ===
+2026-08-07 11:21:29,227 | INFO | 
+        Model  Accuracy  Precision   Recall       F1  Exact Match Ratio  Training Time  Prediction Time
+      xgboost  0.871099   0.872572 0.871099 0.871709           0.650970         6.7579           0.9493
+          mlp  0.861496   0.863631 0.861496 0.862178           0.628255         0.6864           0.1291
+          svm  0.847091   0.844029 0.847091 0.843888           0.593352        11.5364           1.8573
+random_forest  0.844875   0.833526 0.844875 0.833621           0.585596         2.1297           1.0804
+2026-08-07 11:21:29,227 | INFO | 
+🏆 BEST MODEL IDENTIFIED: xgboost
+2026-08-07 11:21:29,227 | INFO | 🏆 EXACT MATCH RATIO: 0.6510
+2026-08-07 11:21:29,228 | INFO | Saved comparison report to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/comparison.csv
+2026-08-07 11:21:29,233 | INFO | Saved best model artifact to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/best_model.pkl
+2026-08-07 11:21:29,234 | INFO | Saved best model evaluation report to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/best_model_report.json
+2026-08-07 11:21:29,234 | INFO | Automated Training Pipeline executed successfully.
+2026-08-07 11:32:10,537 | INFO | Initiating load sequence for 'xgboost' (Version: v20260807_055127)
+2026-08-07 11:32:10,566 | INFO | Model successfully loaded into memory in 0.028s.
+2026-08-07 11:32:11,875 | INFO | Latency 1190.468 ms total
+2026-08-10 23:16:17,387 | INFO | === Starting Automated Training Pipeline ===
+2026-08-10 23:16:17,387 | INFO | Loading dataset from /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/data/processed/protect90_features_ml_ready.parquet...
+2026-08-10 23:16:17,551 | INFO | Delegating to DataPreprocessor...
+2026-08-10 23:16:17,551 | INFO | DataPreprocessor initialized (missing=median, outlier=zscore/clip, scaling=standard, test_size=0.20).
+2026-08-10 23:16:17,551 | INFO | Starting fit_transform on DataFrame of shape (9022, 202).
+2026-08-10 23:16:17,594 | INFO | Validation passed: shape=(9022, 202), duplicates=0, infinite_values=0.
+2026-08-10 23:16:17,624 | INFO | No constant feature columns found.
+2026-08-10 23:16:17,773 | INFO | Numeric imputation fitted (strategy=median); 0 missing value(s) in training data.
+2026-08-10 23:16:17,852 | INFO | Outlier clipping applied: 2937 value(s) clipped.
+2026-08-10 23:16:17,858 | INFO | LabelEncoder fitted for target 'sc_type': 4 class(es) -> ['0', '1', '2', '3']
+2026-08-10 23:16:17,859 | INFO | LabelEncoder fitted for target 'fault_target': 4 class(es) -> ['Line_1_2_a', 'Line_1_2_b', 'Line_2_3_a', 'Line_2_3_b']
+2026-08-10 23:16:17,861 | INFO | LabelEncoder fitted for target 'phase_select': 3 class(es) -> ['0', '1', '2']
+2026-08-10 23:16:17,870 | INFO | Train/test split complete: 7217 train / 1805 test rows (test_size=0.20).
+2026-08-10 23:16:17,878 | INFO | Scaler fitted: standard on 198 feature(s).
+2026-08-10 23:16:17,880 | INFO | fit_transform complete: 198 final feature(s), 7217 train row(s), 1805 test row(s).
+2026-08-10 23:16:17,881 | INFO | Preprocessing complete. Train size: 7217, Test size: 1805, Features: 198
+2026-08-10 23:16:17,881 | INFO | --- Processing Model: svm ---
+2026-08-10 23:16:17,881 | INFO | Creating model: svm
+2026-08-10 23:16:17,881 | INFO | Successfully created svm.
+2026-08-10 23:16:17,881 | INFO | Training svm...
+2026-08-10 23:16:32,669 | INFO | Training completed in 14.79s.
+2026-08-10 23:16:32,669 | INFO | Evaluating svm...
+2026-08-10 23:16:34,695 | INFO | Starting model evaluation process...
+2026-08-10 23:16:34,695 | INFO | Generating predictions on the test set...
+2026-08-10 23:16:36,546 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.5934
+2026-08-10 23:16:36,546 | INFO | Saving model 'svm' (Version: v20260810_174636) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/svm/v20260810_174636
+2026-08-10 23:16:36,993 | INFO | Successfully saved and verified 'svm' version 'v20260810_174636'.
+2026-08-10 23:16:36,994 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/svm_report.json
+2026-08-10 23:16:36,994 | INFO | --- Processing Model: random_forest ---
+2026-08-10 23:16:36,994 | INFO | Creating model: random_forest
+2026-08-10 23:16:36,994 | INFO | Successfully created random_forest.
+2026-08-10 23:16:36,994 | INFO | Training random_forest...
+2026-08-10 23:16:39,268 | INFO | Training completed in 2.27s.
+2026-08-10 23:16:39,268 | INFO | Evaluating random_forest...
+2026-08-10 23:16:40,517 | INFO | Starting model evaluation process...
+2026-08-10 23:16:40,518 | INFO | Generating predictions on the test set...
+2026-08-10 23:16:40,810 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.5856
+2026-08-10 23:16:40,810 | INFO | Saving model 'random_forest' (Version: v20260810_174640) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/random_forest/v20260810_174640
+2026-08-10 23:16:41,036 | INFO | Successfully saved and verified 'random_forest' version 'v20260810_174640'.
+2026-08-10 23:16:41,036 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/random_forest_report.json
+2026-08-10 23:16:41,036 | INFO | --- Processing Model: xgboost ---
+2026-08-10 23:16:41,036 | INFO | Creating model: xgboost
+2026-08-10 23:16:41,036 | INFO | Successfully created xgboost.
+2026-08-10 23:16:41,036 | INFO | Training xgboost...
+2026-08-10 23:16:48,249 | INFO | Training completed in 7.21s.
+2026-08-10 23:16:48,249 | INFO | Evaluating xgboost...
+2026-08-10 23:16:48,403 | INFO | Starting model evaluation process...
+2026-08-10 23:16:48,403 | INFO | Generating predictions on the test set...
+2026-08-10 23:16:48,570 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.6510
+2026-08-10 23:16:48,570 | INFO | Saving model 'xgboost' (Version: v20260810_174648) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/xgboost/v20260810_174648
+2026-08-10 23:16:48,600 | INFO | Successfully saved and verified 'xgboost' version 'v20260810_174648'.
+2026-08-10 23:16:48,601 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/xgboost_report.json
+2026-08-10 23:16:48,601 | INFO | --- Processing Model: mlp ---
+2026-08-10 23:16:48,601 | INFO | Creating model: mlp
+2026-08-10 23:16:48,601 | INFO | Successfully created mlp.
+2026-08-10 23:16:48,601 | INFO | Training mlp...
+2026-08-10 23:16:49,337 | INFO | Training completed in 0.74s.
+2026-08-10 23:16:49,337 | INFO | Evaluating mlp...
+2026-08-10 23:16:49,455 | INFO | Starting model evaluation process...
+2026-08-10 23:16:49,455 | INFO | Generating predictions on the test set...
+2026-08-10 23:16:49,590 | INFO | Evaluation complete. Overall Exact Match Ratio: 0.6283
+2026-08-10 23:16:49,590 | INFO | Saving model 'mlp' (Version: v20260810_174649) to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/model_store/mlp/v20260810_174649
+2026-08-10 23:16:49,641 | INFO | Successfully saved and verified 'mlp' version 'v20260810_174649'.
+2026-08-10 23:16:49,641 | INFO | Evaluation report successfully saved to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/reports/mlp_report.json
+2026-08-10 23:16:49,641 | INFO | Generating Comparison DataFrame...
+2026-08-10 23:16:49,643 | INFO | === PIPELINE COMPLETION SUMMARY ===
+2026-08-10 23:16:49,644 | INFO | 
+        Model  Accuracy  Precision   Recall       F1  Exact Match Ratio  Training Time  Prediction Time
+      xgboost  0.871099   0.872572 0.871099 0.871709           0.650970         7.2127           0.1532
+          mlp  0.861496   0.863631 0.861496 0.862178           0.628255         0.7362           0.1178
+          svm  0.847091   0.844029 0.847091 0.843888           0.593352        14.7881           2.0251
+random_forest  0.844875   0.833526 0.844875 0.833621           0.585596         2.2734           1.2491
+2026-08-10 23:16:49,644 | INFO | 
+🏆 BEST MODEL IDENTIFIED: xgboost
+2026-08-10 23:16:49,645 | INFO | 🏆 EXACT MATCH RATIO: 0.6510
+2026-08-10 23:16:49,646 | INFO | Saved comparison report to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/comparison.csv
+2026-08-10 23:16:49,651 | INFO | Saved best model artifact to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/best_model.pkl
+2026-08-10 23:16:49,652 | INFO | Saved best model evaluation report to /Users/aditya/Desktop/major project/AI_Fault_Detection_Project/results/best_model_report.json
+2026-08-10 23:16:49,652 | INFO | Automated Training Pipeline executed successfully.
